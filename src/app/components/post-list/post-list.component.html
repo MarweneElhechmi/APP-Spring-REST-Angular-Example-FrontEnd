@@ -1,0 +1,64 @@
+<div [@routerTransition]>
+  <mat-card>
+    <mat-card-content>
+<mat-tab-group class="demo-tab-group">
+
+    <!--   TAB 1  -->
+    <mat-tab label="Tab 1">
+
+      <div class="card mt-5">
+        <h1 class="card-header bg-primary text-white">
+          Liste
+        </h1>
+        <div class="card-body">
+
+          <p-table [value]="pageData | slice:0:10">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>Vin</th>
+                    <th>Year</th>
+                    <th>Brand</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-pageData>
+                <tr>
+                    <td>{{pageData.id}}</td>
+                    <td>{{pageData.title}}</td>
+                    <td>{{pageData.body}}</td>
+                </tr>
+            </ng-template>
+        </p-table>
+
+
+      </div>
+      </div>
+
+    </mat-tab>
+    <!--   FIN TAB 1 -->
+
+
+
+    <!--   TAB 2  -->
+    <mat-tab label="Tab 2">
+
+
+
+    </mat-tab>
+     <!--   FIN TAB 2 -->
+
+
+
+    <!--   TAB 1  -->
+    <mat-tab label="Tab 3">Content 3
+
+
+    </mat-tab>
+    <!--   FIN TAB 1=3 -->
+
+  </mat-tab-group>
+</mat-card-content>
+</mat-card>
+</div>
+
+
+
