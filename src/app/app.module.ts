@@ -12,6 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
+import { WelcomeComponent } from './components/welcome/welcome.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { NotfoundComponent } from './components/notfound/notfound.component';
     PostListComponent,
     NavbarComponent,
     FooterComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    WelcomeComponent
 
   ],
   imports: [
