@@ -15,7 +15,7 @@ export class PostDetailsGuard implements CanActivate {
     let id=next.url[1].path; //Récupérer le second argument de l'URL et le convertir en entier
     //On a enlevé le + et on la mis ci-dessous pour pouvoir récupérer la valeur de id aprés dans ${id}
     if(isNaN(+id)||(+id<1)){
-      alert("Attention, Le Id ${id} non valide. Veuiller entrer une valeur exacte");
+      alert(`Attention, Le Id ${id} non valide. Veuiller entrer une valeur exacte`);
       this.router.navigate['/posts'];
       return false
     }
