@@ -14,6 +14,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { PostDetailsComponent } from './components/post-details/post-details.component';
+import { RoutingModule } from './routing/routing.module';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { PostDetailsComponent } from './components/post-details/post-details.com
     MatCardModule,
     FormsModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
