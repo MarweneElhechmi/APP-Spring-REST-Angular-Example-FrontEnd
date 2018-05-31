@@ -25,6 +25,11 @@
                     <td>{{pageData.id}}</td>
                     <td>{{pageData.title}}</td>
                     <td>{{pageData.body}}</td>
+                    <td>
+                      <a routerLink="/details/{{pageData.id}}" class="clickable">Edit Posts</a>
+                      <!--<a [routerLink]="['/detail',pageData.id]" class="clickable">Edit Posts</a>-->
+
+                    </td>
                 </tr>
             </ng-template>
         </p-table>

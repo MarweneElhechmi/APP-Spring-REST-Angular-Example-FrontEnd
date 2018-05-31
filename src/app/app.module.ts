@@ -13,6 +13,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
+import { PostDetailsComponent } from './components/post-details/post-details.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
     NavbarComponent,
     FooterComponent,
     NotfoundComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    PostDetailsComponent
 
   ],
   imports: [

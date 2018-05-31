@@ -15,6 +15,10 @@ export class PostsService {
           return this.http.get<IPost[]>("http://localhost:8080/api/posts");
   }
 
+  findById(id:number): Observable<IPost>
+  {
+          return this.http.get<IPost>("http://localhost:8080/api/posts/"+id);
+  }
 
   getAllPosts():IPost[]{
 
